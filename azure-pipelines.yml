@@ -83,4 +83,5 @@ stages:
             inputs: 
               action: scale
               kind: deployment
+              name: $(imageRepository)
               replicas: 5
