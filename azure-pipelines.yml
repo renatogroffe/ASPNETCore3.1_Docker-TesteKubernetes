@@ -77,3 +77,10 @@ stages:
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
 
+
+          - task: KubernetesManifest@0
+            displayName: Scale
+            inputs: 
+              action: scale
+              kind: deployment
+              replicas: 5
