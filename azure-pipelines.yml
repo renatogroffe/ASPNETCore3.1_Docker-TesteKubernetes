@@ -12,7 +12,7 @@ variables:
 
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '3defadee-45de-41d3-82bb-26e4078a49de'
-  imageRepository: 'apicontagem-testekube'
+  imageRepository: 'apicontagemtestekube'
   containerRegistry: 'groffeazuredevops.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
