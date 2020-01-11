@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: apicontagemtestekube 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: apicontagemtestekube 
+    spec:
+      containers:
+        - name: apicontagemtestekube 
+          image: groffeazuredevops.azurecr.io/apicontagemtestekube
+          ports:
+          - containerPort: 80
