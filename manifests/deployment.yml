@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: apicontagemk8sfcnuvem0 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: apicontagemk8sfcnuvem0 
+    spec:
+      containers:
+        - name: apicontagemk8sfcnuvem0 
+          image: groffeazuredevops.azurecr.io/apicontagemk8sfcnuvem0
+          ports:
+          - containerPort: 80
