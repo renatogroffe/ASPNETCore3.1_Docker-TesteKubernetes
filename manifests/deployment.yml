@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: b2wazuredevops 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: b2wazuredevops 
+    spec:
+      containers:
+        - name: b2wazuredevops 
+          image: groffeazuredevops.azurecr.io/b2wazuredevops
+          ports:
+          - containerPort: 80
